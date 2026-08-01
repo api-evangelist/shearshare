@@ -1,7 +1,24 @@
 aid: shearshare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shearshare.png
 name: ShearShare
-description: ShearShare is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ShearShare is a B2B2C marketplace that lets salon and barbershop owners rent out unused
+  chairs, booths, and suites to licensed beauty and barbering professionals on a flexible, on-demand
+  basis — space-as-a-service for the hair, beauty, and grooming industry. Through its mobile app and web
+  platform, independent stylists, barbers, and cosmetologists discover and book professional space by the
+  day, while shop owners monetize idle capacity. Founded in 2015 by Dr. Tye Caldwell and Courtney Caldwell
+  and headquartered in McKinney, Texas, the company has been featured on ABC's Shark Tank and is backed by
+  500 Global among other investors.
 url: https://raw.githubusercontent.com/api-evangelist/shearshare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,23 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-notes: 'Enrichment 2026-07-21: shearshare.com currently serves a Bluehost "Welcome — Coming Soon"
+  placeholder (HTTP 200, valid TLS) rather than the ShearShare product; no api/developer/docs subdomains,
+  no /.well-known/* documents, and no /llms.txt were found. No public API or developer surface exists.
+  Only a live domain-security probe produced a real artifact this pass.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Marketplace
+- Beauty
+- Salon
+- Barbershop
+- Booth Rental
+- Space as a Service
+- Gig Economy
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/shearshare-domain-security.yml
 - type: Website
   url: https://shearshare.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
