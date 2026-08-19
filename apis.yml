@@ -30,7 +30,7 @@ x-notes: 'Enrichment 2026-07-21: shearshare.com currently serves a Bluehost "Wel
   placeholder (HTTP 200, valid TLS) rather than the ShearShare product; no api/developer/docs subdomains,
   no /.well-known/* documents, and no /llms.txt were found. No public API or developer surface exists.
   Only a live domain-security probe produced a real artifact this pass.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
