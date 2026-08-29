@@ -31,6 +31,8 @@ description: ShearShare is a B2B2C marketplace that lets salon and barbershop ow
   and headquartered in McKinney, Texas, the company has been featured on ABC's Shark Tank and is backed by
   500 Global among other investors.
 url: https://raw.githubusercontent.com/api-evangelist/shearshare/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
